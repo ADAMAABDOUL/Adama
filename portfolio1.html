@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Adama Abdoul BA</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> <!-- Fichier CSS externe -->
+    <script src="script.js" defer></script> <!-- Fichier JavaScript externe -->
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+    <!-- Header Section -->
+    <header class="bg-blue-900 text-white py-6">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <h1 class="text-3xl font-bold">Adama Abdoul BA</h1>
+            <nav>
+                <a href="#about" class="px-4 hover:text-yellow-500">Accueil</a>
+                <a href="#experience" class="px-4 hover:text-yellow-500">Expérience</a>
+                <a href="#projects" class="px-4 hover:text-yellow-500">Projets</a>
+                <a href="#skills" class="px-4 hover:text-yellow-500">Compétences</a>
+                <a href="#contact" class="px-4 hover:text-yellow-500">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="bg-white py-10 text-center">
+        <div class="container mx-auto px-4">
+            <img src="tf.CV.2.jpg" alt="Photo de Adama Abdoul BA" class="w-40 h-40 mx-auto rounded-full mb-4">
+            <h2 class="text-2xl font-bold text-blue-900">Bienvenue sur mon portfolio</h2>
+            <p class="mt-4 text-lg">Bienvenue sur mon site ! Découvrez mon parcours en tant que Data Analyst, mes projets et mes compétences.</p>
+            <p class="mt-2 text-sm">Nombre de visites : <span id="visitor-count">0</span></p>
+            <div id="visit-history" class="mt-4 p-4 bg-gray-200 rounded-lg shadow"></div>
+            <a href="cv_Adama_Abdoul_BA.pdf" download class="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-700">Télécharger mon CV</a>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+<section id="experience" class="bg-gray-100 py-12">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-extrabold mb-6 text-blue-900 text-center">Expérience Professionnelle</h2>
+        
+        <!-- Orange -->
+        <div class="bg-white p-6 rounded-lg shadow-lg mb-6 flex items-center">
+            <img src="Orange.webp" alt="Orange Logo" class="w-16 h-16 mr-4">
+            <div>
+                <h3 class="font-bold text-2xl text-gray-800">Data Scientist | Orange - Toulon (2023-2024)</h3>
+                
+                <div class="bg-white p-4 rounded-lg shadow mt-4">
+                    <h3 class="font-bold text-xl">Projet 1 : Automatisation du traitement et du partage des fichiers</h3>
+                    <p class="mt-2"><strong>Objectif :</strong> Automatiser la récupération et le dépôt de fichiers pour améliorer l’accès aux données par les équipes métiers et les opérateurs partenaires.</p>
+                    <ul class="list-disc ml-6 mb-4">
+                        <li>Développement d’un automate en Python (Selenium, Pandas, Tkinter) permettant de récupérer 130 fichiers depuis une application interne.</li>
+                        <li>Organisation et dépôt automatique des fichiers dans des dossiers spécifiques sur SharePoint.</li>
+                        <li>Création d’une interface utilisateur (Tkinter) pour faciliter l’utilisation par les équipes métiers.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-4 rounded-lg shadow mt-4">
+                    <h3 class="font-bold text-xl">Projet 2 : Modèle de catégorisation des flux d’informations</h3>
+                    <p class="mt-2"><strong>Objectif :</strong> Automatiser la classification des messages de relance et des demandes des opérateurs partenaires.</p>
+                    <ul class="list-disc ml-6 mb-4">
+                        <li>Connexion à la base de données interne pour récupérer les données d'entraînement.</li>
+                        <li>Apprentissage non supervisé : Clustering des flux avec les algorithmes EM et K-Means.</li>
+                        <li>Vectorisation des textes avec Word2Vec et rééquilibrage des classes.</li>
+                        <li>Entraînement d’un modèle XGBoost pour affiner la catégorisation.</li>
+                        <li>Validation métier et déploiement d’une application Python utilisée par les équipes métiers (350 demandes catégorisées chaque mois).</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-4 rounded-lg shadow mt-4">
+                    <h3 class="font-bold text-xl">Projet 3 : Automatisation des processus métiers, Analyse et reporting des commandes</h3>
+                    <p class="mt-2"><strong>Objectif :</strong> Suivi et optimisation des processus d’achats et de ventes.</p>
+                    <ul class="list-disc ml-6 mb-4">
+                        <li>Extraction des données avec SQL.</li>
+                        <li>Développement de jobs Talend pour extraire, transformer et charger les données nécessaires au suivi des commandes.</li>
+                        <li>Automatisation de la mise à jour et de l’envoi des fichiers marketing avec macros VBA.</li>
+                        <li>Développement d’indicateurs et de tableaux de bord avec Power BI et Excel.</li>
+                        <li>Automatisation de rapports dynamiques de KPIs pour améliorer la prise de décision.</li>
+                        <li>Documentation et suivi des tâches avec Jira et Confluence pour assurer la traçabilité.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Stagiaire Data Scientist | Aix-Marseille Université -->
+        <div class="bg-white p-6 rounded-lg shadow-lg flex items-center">
+            <img src="aix-marseille-universite.webp" alt="Aix-Marseille Université Logo" class="w-16 h-16 mr-4">
+            <div>
+                <h3 class="font-bold text-2xl text-gray-800">Stagiaire Data Scientist | Aix-Marseille Université - Marseille (Avril 2023 - Juin 2023)</h3>
+                <p class="mt-3 text-gray-600">Modélisation de la Durée de Traitement des Dossiers d'Assurance.</p>
+                <ul class="list-disc ml-6 mt-3 text-gray-700">
+                    <li>Pipeline de données : Préparation, nettoyage et exploration de données hétérogènes (type de contrat, historique client, complexité des dossiers) en utilisant Python (pandas, NumPy, Matplotlib, Seaborn).</li>
+                    <li>Modélisation prédictive : Implémentation de modèles statistiques et d'apprentissage automatique (GLM, Gradient Boosting, Random Forests) pour prédire les durées de traitement.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projets Académiques -->
+
+        <h2 class="text-3xl font-extrabold mt-12 mb-6 text-blue-900 text-center">Projets Académiques</h2>
+        
+		            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transform transition duration-300 hover:scale-105">
+						<h3 class="font-bold text-xl text-center">Evaluation des Performances de Modèles de Survie par Cross-Validation:Une Approche Statistique en Science des Données</h3>
+						<p class="text-gray-700 mt-3 text-center">Ce projet explore l’utilisation de la validation croisée dans l’analyse de survie en appliquant des modèles d’accélération du temps de défaillance (AFT) et des modèles de Cox. L’objectif est d’évaluer la performance prédictive et la généralisation de ces modèles à travers différentes métriques, telles que le C-index, le score Brier, l’Integrated Brier Score (IBS) et l’aire sous la courbe dépendante du temps (Time-dependent AUC).
+
+                       L’étude commence par la génération de données synthétiques, incluant des covariables corrélées, le temps jusqu’à l’événement et la censure. Ensuite, plusieurs modèles de survie sont ajustés et comparés à l’aide de la validation croisée. Ce travail met en lumière l’importance des techniques d’évaluation et d’optimisation pour une meilleure interprétation des modèles en contexte réel.</p>
+						<a href="Code_projet_Marc_Adama_Charlotte.pdf" class="text-blue-600 text-center block mt-2">Voir le code</a>
+						<a href="raport_projet_statistique_Adama_Charlotte_Marc.pdf" class="text-blue-600 text-center block mt-2">Voir le rapport</a>
+					</div>
+					
+					<div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transform transition duration-300 hover:scale-105">
+						<h3 class="font-bold text-xl text-center">Classification d'images avec CNN</h3>
+						<p class="text-gray-700 mt-3 text-center">Application d’un modèle CNN pour la classification d'images, en utilisant des techniques de pré-traitement (augmentation des données, normalisation).</p>
+						<a href="classification_cnn_code.ipynb" class="text-blue-600 text-center block mt-2">Voir le code</a>
+						<a href="Presentation.BA-Manzala.pdf" class="text-blue-600 text-center block mt-2">Voir le rapport</a>
+					</div>
+					
+					<div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transform transition duration-300 hover:scale-105">
+						<h3 class="font-bold text-xl text-center">Prédiction des prix immobiliers</h3>
+						<p class="text-gray-700 mt-3 text-center">Développement d’un modèle de régression pour prédire les prix des biens immobiliers à partir de données structurées (surface, localisation, type de bien).</p>
+						<a href="prediction_immobilier_code.ipynb" class="text-blue-600 text-center block mt-2">Voir le code</a>
+						<a href="prediction_immobilier_report.pdf" class="text-blue-600 text-center block mt-2">Voir le rapport</a>
+					</div>
+       
+    <!-- Projects Section -->
+    <section id="projects" class="bg-gray-100 py-10">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-4 text-blue-900">Projets & Visualisations</h2>
+            <div class="grid gap-6 md:grid-cols-2">
+                <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg">
+                    <h3 class="font-bold text-xl">Analyse de l'évolution des cas de Covid 19</h3>
+                    <video controls class="w-full rounded-lg mb-4">
+                        <source src="covid_bar_chart_race.mp4" type="video/mp4">
+                    </video>
+					</p>
+					  Visualisation dynamique de l'évolution des cas de Covid-19 dans le monde à travers une 
+					  <strong>bar chart race</strong> animée, générée avec <code>matplotlib</code>, <code>pandas</code> et <code>ffmpeg</code>.
+					  Ce projet combine <strong>data engineering</strong> (nettoyage, traitement, tri temporel) et <strong>data storytelling visuel</strong> pour illustrer l'impact pandémique à l'échelle mondiale.
+					</p>
+                    <!-- Débuter en Analyse de données.-->
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg">
+                    <h3 class="font-bold text-xl">Tableaux de bord Power BI</h3>
+                    <video controls class="w-full rounded-lg mb-4">
+                        <source src="Les Bases de la Data Débuter en Analyse de données.mp4" type="video/mp4">
+                    </video>
+                   <p>
+					  Vidéo pédagogique générée avec l’intelligence artificielle, illustrant de manière simple et animée 
+					  les <strong>bases de l’IA</strong>, ses usages actuels et les grands concepts à connaître pour débuter (réseaux de neurones, machine learning, NLP...).
+					</p>
+
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg">
+                    <h3 class="font-bold text-xl">Visualisation des ventes en station Shell avec python </h3>
+                    <video controls class="w-full rounded-lg mb-4">
+                        <source src="Rapport_Decembre_Station_Shell_Ourossogui.mp4" type="video/mp4">
+                    </video>
+				<p>
+				  Visualisation dynamique de l'évolution du <strong>litrage de carburant vendu</strong> dans une station Shell. 
+				  Le graphique met en évidence la progression journalière des ventes jusqu'à l'atteinte de l’<strong>objectif mensuel fixé</strong>. 
+				  Ce projet, réalisé en Python, combine <strong>analyse temporelle</strong>, seuils d’alerte et validation visuelle des performances commerciales.
+				</p>
+
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg">
+                    <h3 class="font-bold text-xl">Comprendre l'Intelligence Artificielle</h3>
+                    <video controls class="w-full rounded-lg mb-4">
+                        <source src="L'IA expliquée (avec humour).mp4" type="video/mp4">
+                    </video>
+                    <p>Vidéo pédagogique expliquant les bases et l’impact de l’intelligence artificielle.</p>
+                </div>
+            </div>
+			<!-- Projet IHM Candidature 
+			<div class="bg-white p-6 rounded-lg shadow-lg mb-6 transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+				<h3 class="font-bold text-2xl text-gray-800 text-center">Suivi des Candidatures</h3>
+				<img src="produit.png" alt="IHM Suivi Candidatures" class="w-full rounded-lg mt-4">
+				<p class="text-gray-700 mt-3">Développement d'une interface graphique pour suivre les candidatures en temps réel avec des visualisations interactives.</p>
+			</div>-->
+			
+			<!--teste-->
+			<section id="projet-powerbi-ventes">
+			  <h2>📊 Projet Data – Analyse des Ventes d’une Marque (Power BI)</h2>
+
+			  <p>
+				Ce projet personnel réalisé avec <strong>Power BI</strong> vise à analyser les ventes d’une marque à travers trois dimensions clés : les <strong>produits</strong>, les <strong>boutiques</strong> et les <strong>performances commerciales globales</strong>.
+				L’objectif était de fournir un <em>dashboard interactif</em> simple à exploiter par une équipe commerciale ou marketing.
+			  </p>
+
+			  <p>Le rapport est divisé en 3 pages principales :</p>
+
+			  <h3>🟣 1. Vue Produit</h3>
+			  <p>
+				- Analyse par catégorie, sous-catégorie et marque<br>
+				- Nombre de produits, prix unitaires, top ventes<br>
+				- Visualisation de la répartition par typologie
+			  </p>
+			  <img src="Produit.png" alt="Page Produit – Analyse Power BI" width="100%">
+
+			  <h3>🟠 2. Vue Boutique</h3>
+			  <p>
+				- Analyse des performances par point de vente<br>
+				- Classement des boutiques par volume de ventes<br>
+				- Carte dynamique (si présente) ou tableau comparatif
+			  </p>
+			  <img src="Boutique.png" alt="Page Boutique – Analyse Power BI" width="100%">
+
+			  <h3>🔵 3. Vue Ventes</h3>
+			  <p>
+				- Évolution des ventes sur la période<br>
+				- Analyse des retours, des pics d’activité, des produits phares<br>
+				- Suivi de KPIs : chiffre d’affaires, volume vendu, panier moyen
+			  </p>
+			  <img src="Vente.png" alt="Page Vente – Analyse Power BI" width="100%">
+			  
+			  <p>
+				<strong>Outils utilisés :</strong> Power BI Desktop, DAX, Power Query<br>
+				<strong>Techniques :</strong> création de mesures personnalisées, relation entre tables, slicers, table calendrier, visualisations combinées
+			  </p>
+			</section>
+
+			<!--teste-->
+				<!-- Graphique interactif avec Dash 
+			<div class="bg-white p-6 rounded-lg shadow-lg mb-6 transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+				<h3 class="font-bold text-2xl text-gray-800 text-center">Analyse Interactive</h3>
+				<iframe src="map.html" class="w-full h-96 mt-4 border rounded-lg"></iframe>
+				<p class="text-gray-700 mt-3">Une visualisation interactive des données issues des expériences et projets.</p>
+			</div> -->
+        </div>
+    </section>
+	<section id="competences" class="bg-gray-100 py-12">
+		<div class="container mx-auto px-6">
+			<h2 class="text-3xl font-extrabold mb-6 text-blue-900 text-center">Compétences</h2>
+			<ul class="list-none space-y-3 text-gray-800">
+			  <li><i class="fas fa-code text-blue-600 mr-2"></i> <strong>Python & SQL :</strong> Pandas, Scikit-learn, Selenium, Tkinter, jointures avancées, optimisation.</li>
+			  <li><i class="fas fa-database text-green-600 mr-2"></i> <strong>Outils ETL & BI :</strong> Talend, Power BI, Excel (VBA, macros) pour automatisation & analyse.</li>
+			  <li><i class="fas fa-brain text-purple-600 mr-2"></i> <strong>Machine Learning / NLP :</strong> XGBoost, Word2Vec, clustering EM, K-Means.</li>
+			  <li><i class="fas fa-chart-line text-orange-600 mr-2"></i> <strong>Statistiques :</strong> modélisation, analyse exploratoire, prévision.</li>
+			  <li><i class="fas fa-chart-pie text-pink-600 mr-2"></i> <strong>Reporting & Visualisation :</strong> Power BI, Excel, dashboards interactifs.</li>
+			  <li><i class="fas fa-users text-indigo-600 mr-2"></i> <strong>Soft Skills :</strong> collaboration, gestion de projet (Jira, Confluence), documentation claire.</li>
+			</ul>
+
+		</div>
+	</section>
+    <!-- Contact Section -->
+    <section id="contact" class="bg-blue-900 text-white py-10 text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-4">Contact</h2>
+            <p>Email : <a href="mailto:adamaabdoul1.ba@gmail.com" class="underline">adamaabdoul1.ba@gmail.com</a></p>
+            <p>LinkedIn : <a href="https://www.linkedin.com/in/adama-abdoul-ba-a292321b0" class="underline">Mon profil</a></p>
+            <form action="mailto:adamaabdoul1.ba@gmail.com" method="post" enctype="text/plain" class="mt-4">
+                <input type="text" name="Nom" placeholder="Votre nom" class="w-full p-2 mb-2 rounded-lg text-black">
+                <input type="email" name="Email" placeholder="Votre email" class="w-full p-2 mb-2 rounded-lg text-black">
+                <textarea name="Message" placeholder="Votre message" class="w-full p-2 mb-2 rounded-lg text-black"></textarea>
+                <button type="submit" class="bg-yellow-500 text-white px-4 py-2 rounded-lg shadow hover:bg-yellow-600">Envoyer</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,100 @@
+/* Ajout de couleurs globales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Titre principal de la page */
+h1, h2, h3 {
+    color: #1a73e8; /* Bleu doux pour titres */
+}
+
+/* Liens au survol */
+a:hover {
+    color: #ffbc00; /* Jaune vif au survol des liens */
+}
+
+/* Modification des liens du header */
+header a:hover {
+    color: #ffbc00; /* Jaune au survol des liens du menu */
+}
+
+/* Modifications de l'en-tête */
+header {
+    background-color: #1a73e8; /* Bleu foncé pour l'en-tête */
+    color: #fff; /* Texte en blanc */
+}
+
+/* Liens dans l'entête */
+header a {
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Bouton pour certains liens (s'il y en a) */
+button, .btn {
+    background-color: #1a73e8; /* Bleu clair pour boutons */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover, .btn:hover {
+    background-color: #ffbc00; /* Jaune vif au survol du bouton */
+}
+
+/* Styles pour les sections de projets */
+section#projects {
+    background-color: #fff;
+}
+
+section#projects .grid {
+    gap: 1.5rem;
+}
+
+/* Card des projets */
+.bg-gray-100 {
+    background-color: #f4f4f9; /* Couleur de fond plus douce pour chaque carte projet */
+}
+
+.bg-white {
+    background-color: #ffffff;
+}
+
+.bg-gray-800 {
+    background-color: #333333;
+}
+
+section#contact {
+    background-color: #1a73e8; /* Couleur bleue pour la section de contact */
+    color: white;
+}
+
+ul li {
+    margin-bottom: 0.8rem;
+}
+#visit-history {
+    display: none;
+}
+
+
+/* Animations et effets lors du survol d'un élément */
+.bg-gray-100:hover, .bg-white:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px); /* Ajout d'une élévation au survol */
+    transition: all 0.3s ease;
+}
+
+footer {
+    background-color: #222;
+    color: #ddd;
+}
+
+footer a {
+    color: #ffbc00;
+}
