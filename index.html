@@ -280,17 +280,27 @@
 	</section>
     <!-- Contact Section -->
     <section id="contact" class="bg-blue-900 text-white py-10 text-center">
-        <div class="container mx-auto px-4">
-            <h2 class="text-2xl font-bold mb-4">Contact</h2>
-            <p>Email : <a href="mailto:adamaabdoul1.ba@gmail.com" class="underline">adamaabdoul1.ba@gmail.com</a></p>
-            <p>LinkedIn : <a href="https://www.linkedin.com/in/adama-abdoul-ba-a292321b0" class="underline">Mon profil</a></p>
-            <form action="mailto:adamaabdoul1.ba@gmail.com" method="post" enctype="text/plain" class="mt-4">
-                <input type="text" name="Nom" placeholder="Votre nom" class="w-full p-2 mb-2 rounded-lg text-black">
-                <input type="email" name="Email" placeholder="Votre email" class="w-full p-2 mb-2 rounded-lg text-black">
-                <textarea name="Message" placeholder="Votre message" class="w-full p-2 mb-2 rounded-lg text-black"></textarea>
-                <button type="submit" class="bg-yellow-500 text-white px-4 py-2 rounded-lg shadow hover:bg-yellow-600">Envoyer</button>
-            </form>
-        </div>
-    </section>
+			<div class="container mx-auto px-4">
+				<h2 class="text-2xl font-bold mb-4">Contact</h2>
+				<p>Email : <a href="mailto:adamaabdoul1.ba@gmail.com" class="underline">adamaabdoul1.ba@gmail.com</a></p>
+				<p>LinkedIn : <a href="https://www.linkedin.com/in/adama-abdoul-ba-a292321b0" class="underline">Mon profil</a></p>
+
+				<form action="https://formsubmit.co/adamaabdoul1.ba@gmail.com" method="POST" class="mt-4">
+					<input type="text" name="Nom" placeholder="Votre nom" required class="w-full p-2 mb-2 rounded-lg text-black">
+					<input type="email" name="Email" placeholder="Votre email" required class="w-full p-2 mb-2 rounded-lg text-black">
+					<textarea name="Message" placeholder="Votre message" required class="w-full p-2 mb-2 rounded-lg text-black"></textarea>
+
+					<!-- Redirection après envoi -->
+					<input type="hidden" name="_next" value="https://adamaabdoul.github.io/Adama/#contact">
+
+					<!-- Protection anti-spam -->
+					<input type="hidden" name="_captcha" value="false">
+
+					<button type="submit" class="bg-yellow-500 text-white px-4 py-2 rounded-lg shadow hover:bg-yellow-600">
+						Envoyer
+					</button>
+				</form>
+			</div>
+		</section>
 </body>
 </html>
