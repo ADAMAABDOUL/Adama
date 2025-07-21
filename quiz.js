@@ -1,59 +1,27 @@
-// Liste des images et leur type
 const images = [
+  { src: "ai1.jpeg", isAI: true },
   { src: "ai2.jpeg", isAI: true },
-  { src: "real1.jpg", isAI: false },
-  { src: "real2.jpg", isAI: false },
-  {src: "ai1.jpeg", isAI: true  },
-  { src: "real3.jpg", isAI: false },
-  { src: "ai3.jpeg", isAI: true }
+  { src: "ai3.jpeg", isAI: true },
+  { src: "real1.jpeg", isAI: false },
+  { src: "real2.jpeg", isAI: false },
+  { src: "real3.jpeg", isAI: false }
 ];
 
-let current = 0;
-let score = 0;
+let currentImage = null;
 
-function loadImage() {
-  document.getElementById("quiz-image").src = images[current].src;
-  document.getElementById("feedback").innerText = '';
-  document.getElementById("btn-ai").disabled = false;
-  document.getElementById("btn-real").disabled = false;
+function choisirImage() {
+  const index = Math.floor(Math.random() * images.length);
+  currentImage = images[index];
+  document.getElementById("image-jeu").src = currentImage.src;
+  document.getElementById("feedback").textContent = ""; // Réinitialise le message
 }
 
-function checkAnswer(answer) {
-  const isCorrect = answer === images[current].isAI;
-  const feedback = document.getElementById("feedback");
-
-  if (isCorrect) {
-    feedback.innerText = "✅ Bonne réponse !";
-    score++;
-  } else {
-    feedback.innerText = "❌ Mauvaise réponse.";
-  }
-
-  document.getElementById("btn-ai").disabled = true;
-  document.getElementById("btn-real").disabled = true;
+function deviner(utilisateurPenseAI) {
+  const estCorrect = utilisateurPenseAI === currentImage.isAI;
+  document.getElementById("feedback").textContent = estCorrect
+    ? "✅ Bravo ! Bonne réponse."
+    : "❌ Mauvaise réponse. Essaie encore.";
+  setTimeout(choisirImage, 2000); // Change l'image après 2 secondes
 }
 
-function nextImage() {
-  current++;
-  if (current >= images.length) {
-    showFinalScore();
-  } else {
-    loadImage();
-  }
-}
-
-function showFinalScore() {
-  document.getElementById("quiz-container").innerHTML = `
-    <h2>🎉 Quiz terminé</h2>
-    <p>Score final : ${score} / ${images.length}</p>
-    <button onclick="restartQuiz()">Rejouer 🔁</button>
-  `;
-}
-
-function restartQuiz() {
-  current = 0;
-  score = 0;
-  location.reload();
-}
-
-window.onload = loadImage;
+window.onload = choisirImage;
