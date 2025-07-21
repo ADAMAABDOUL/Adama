@@ -2,9 +2,9 @@ const images = [
   { src: "ai1.jpeg", isAI: true },
   { src: "ai2.jpeg", isAI: true },
   { src: "ai3.jpeg", isAI: true },
-  { src: "real1.jpeg", isAI: false },
-  { src: "real2.jpeg", isAI: false },
-  { src: "real3.jpeg", isAI: false }
+  { src: "real1.jpg", isAI: false },
+  { src: "real2.jpg", isAI: false },
+  { src: "real3.jpg", isAI: false }
 ];
 
 let currentImage = null;
