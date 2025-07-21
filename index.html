@@ -222,7 +222,23 @@
 				</div>
 				<p>Vidéo pédagogique expliquant les bases et l’impact de l’intelligence artificielle.</p>
 		</div>
+		    <!---->
             </div>
+		<div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transform transition duration-300">
+    <h3 class="font-bold text-xl text-center mb-4">Jeu : Image IA ou Réelle ?</h3>
+    <p class="text-gray-700 text-center mb-4">
+        Devinez si l'image affichée est générée par une intelligence artificielle ou prise dans la réalité.
+    </p>
+    <div class="flex justify-center mb-4">
+        <img id="image-jeu" src="" alt="Image à deviner" class="rounded-lg max-h-72 object-contain shadow-md">
+    </div>
+    <div class="flex justify-center space-x-4 mb-4">
+        <button onclick="deviner(true)" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">C’est une IA</button>
+        <button onclick="deviner(false)" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">C’est réel</button>
+    </div>
+    <p id="feedback" class="text-center text-lg font-semibold"></p>
+</div>
+<!---->
 			<!-- Projet IHM Candidature 
 			<div class="bg-white p-6 rounded-lg shadow-lg mb-6 transform transition duration-300 hover:scale-105 hover:shadow-2xl">
 				<h3 class="font-bold text-2xl text-gray-800 text-center">Suivi des Candidatures</h3>
